@@ -15,14 +15,14 @@
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package dev.ronaldomarques.util.myutility.screener;
+package dev.ronaldomarques.util.myutility.debugger;
 
 /**
  * @author Ronaldo Marques;
  * @since 20190501;
  * @last_change 20220213;
- * @product MyUtility.MyScreener;
- * @version 0.4.0-dev;
+ * @product MyUtility.MyDebugger.DP;
+ * @version 0.6.0-dev;
  * @project MY JAVA UTILITY PACK;
  * @category Class Lib;
  * @description My personal Java library implementations of small tools for
@@ -34,6 +34,62 @@ package dev.ronaldomarques.util.myutility.screener;
  *                  IDE Enterprise Java Web Developers v202103;
  * @analysis ...
  */
-public class MyScreener {
+public class DP {// Debug Printer = DP.
+
+	/* If True Print Debug ( i t p d ) */
+	private static boolean itpd = true;
+
+	static {
+		DP.itpd = true;
+	}
+
+	public DP() {
+
+		super();
+		DP.itpd = true;
+
+	}
+
+	/*
+	 * TEMPORARILY: Constructor com parâmetro que diz true/false para o método
+	 * .itpd(); Enquanto outra forma não for desenvolvida como no constructor acima,
+	 * com 1 argumento.
+	 */
+	public DP(boolean itpd) {
+
+		super();
+		DP.itpd = itpd;
+
+	}
+
+	public static void pdOn() {
+
+		DP.itpd = true;
+
+	}
+
+	public static void pdOff() {
+
+		DP.itpd = false;
+
+	}
+
+	/* Print on console whether the static variable itpd in this class is true. */
+	public static void pd(String str) {
+
+		if (DP.itpd)
+			System.out.printf("[DEBUG => %s]", str);
+
+	}
+
+	/*
+	 * Print Line on console whether the static variable itpd in this class is true.
+	 */
+	public static void pdln(String str) {
+
+		if (DP.itpd)
+			System.out.printf("[DEBUG => %s]\n", str);
+
+	}
 
 }

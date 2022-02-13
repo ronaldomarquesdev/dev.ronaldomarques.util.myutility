@@ -15,14 +15,14 @@
  * Therefore, the author of this project does not recognize or assume any responsibility for the use of it,
  * neither for any possible reflexes or consequence of such use.
  */
-package dev.ronaldomarques.util.myutility.screener;
+package dev.ronaldomarques.util.myutility.debugger;
 
 /**
  * @author Ronaldo Marques;
  * @since 20190501;
  * @last_change 20220213;
- * @product MyUtility.MyScreener;
- * @version 0.4.0-dev;
+ * @product MyUtility.MyDebugger;
+ * @version 0.6.0-dev;
  * @project MY JAVA UTILITY PACK;
  * @category Class Lib;
  * @description My personal Java library implementations of small tools for
@@ -34,6 +34,6 @@ package dev.ronaldomarques.util.myutility.screener;
  *                  IDE Enterprise Java Web Developers v202103;
  * @analysis ...
  */
-public class MyScreener {
+public class MyDebugger {
 
 }
